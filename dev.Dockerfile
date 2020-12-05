@@ -11,4 +11,5 @@ RUN npm i -g @angular/cli@latest
 # copy all directory structure
 COPY /. ./
 EXPOSE 4200
+#Allow ng serve to accept requests with host headers that are different to the --host setting. This is needed when accessing the server via a reverse proxy.
 CMD ng serve --host 0.0.0.0 --port 4200 --disable-host-check
