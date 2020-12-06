@@ -2,7 +2,7 @@
 # You can change the node version as per your current angular version
 FROM node:14.15-alpine3.12
 # if you want to use differen working you can change from here
-WORKDIR /usr/src/app
+WORKDIR /app
 # copy first package.json file so we don't need to rerun the npm install every time its loaded from cache to save time
 COPY ./package.json ./
 # COPY package.json package.json
